@@ -39,5 +39,5 @@ app.post('/subscribe', async (req, res) => {
     });
 });
 
-const port = process.env.PORT || 3000;;
+const port = 'https://vserra12.github.io/sender-email-2' || 3000;;
 app.listen(process.env.PORT || port, () => console.log(`Servidor corriendo en http://localhost:${port}`));
