@@ -20,7 +20,7 @@ document.addEventListener("submit", async (event) => {
       },
       body: JSON.stringify(datas)
     };
-    fetch(process.env.PORT+'/subscribe' || 'http://localhost:3000/subscribe', options)
+    fetch('https://vserra12.github.io/sender-email-2/subscribe' || 'http://localhost:3000/subscribe', options)
       .then(response => {
         if (!response.ok) {
           throw new Error('Error de red');
