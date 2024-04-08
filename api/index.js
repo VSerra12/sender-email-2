@@ -23,7 +23,7 @@ app.post('/subscribe', async (req, res) => {
 
     let mailOptions = {
         from: req.body.email,
-        to: 'vicky.serra.24@gmail.com',
+        to: 'admin@grupocober.online',
         subject: 'Nuevo suscriptor',
         text: `Nuevo suscriptor: ${JSON.stringify(subscriberData)}`
     };
