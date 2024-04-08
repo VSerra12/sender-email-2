@@ -20,7 +20,7 @@ document.addEventListener("submit", async (event) => {
       },
       body: JSON.stringify(datas)
     };
-    fetch('http://localhost:5500/subscribe', options)
+    fetch(process.env.PORT+'/subscribe' || 'http://localhost:3000/subscribe', options)
       .then(response => {
         if (!response.ok) {
           throw new Error('Error de red');
